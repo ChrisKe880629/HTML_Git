@@ -1,13 +1,14 @@
 .center
 {
-    /* background-color: pink; */
     height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .center div
 {
     text-align: center;
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 .center .logo
@@ -44,6 +45,7 @@
     border-radius: 60px;
     padding: 5px 20px;
     backdrop-filter: blur(4px) saturate(180%);
+    outline: 2px solid #70757a;
 }
 
 .searching-area input
@@ -69,5 +71,5 @@
 
 .center .blank-area
 {
-    height: 87.5px;
+    height: 50%;
 }
