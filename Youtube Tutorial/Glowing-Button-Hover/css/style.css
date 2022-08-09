@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    gap: 40px;
+
+    background-color: #27282c;
+}
+
+a
+{
+    position: relative;
+    color: #fff;
+    font-size: 2em;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+    background-color: #444;
+    padding: 20px 30px;
+
+    transition: 0.5s;
+}
+
+a:hover
+{
+    letter-spacing: 0.35em;
+    background-color: var(--clr);
+    color: var(--clr);
+    box-shadow: 0 0 35px var(--clr);  /* 上下, 左右, 模糊*/
+}
+
+a::before
+{
+    content: '';
+    background-color: #27282c;
+    inset: 2px;
+    position: absolute;
+}
+
+a span
+{
+    position: relative;
+    z-index: 1;
+}
+
+a i
+{
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+
+a i::before
+{
+    position: absolute;
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-color: #27282c;
+    border: 2px solid var(--clr);
+
+    top: -7.5px;
+    left: 100%;
+
+    transition: 0.5s;
+    transform: translate(-50%);
+}
+
+a:hover i::before
+{
+    left: 0%;
+    transform: translateX(-50%) rotate(45deg);
+    box-shadow: 53px 53px var(--clr);
+}
+
+a i::after
+{
+    position: absolute;
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-color: #27282c;
+    border: 2px solid var(--clr);
+
+    bottom: -7.5px;
+    left: 0%;
+
+    transition: 0.5s;
+    transform: translate(-50%);
+}
+
+a:hover i::after
+{
+    left: 100%;
+    transform: translateX(-50%) rotate(45deg);
+    box-shadow: -53px -53px var(--clr);
+}

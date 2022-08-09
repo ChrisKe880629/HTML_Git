@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Magic Menu Indicator</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <div class="navigation-area">
+            <ul>
+                <li class="navigation-list active">
+                    <a href="#">
+                        <span class="navigation-icon">
+                            <ion-icon name="person-outline"></ion-icon>
+                        </span>
+                        <span class="navigation-text">User</span>
+                    </a>
+                </li>
+                
+                <li class="navigation-list">
+                    <a href="#">
+                        <span class="navigation-icon">
+                            <ion-icon name="chatbubbles-outline"></ion-icon>
+                        </span>
+                        <span class="navigation-text">Message</span>
+                    </a>
+                </li>
+                
+                <li class="navigation-list">
+                    <a href="#">
+                        <span class="navigation-icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="navigation-text">Home</span>
+                    </a>
+                </li>
+                
+                <li class="navigation-list">
+                    <a href="#">
+                        <span class="navigation-icon">
+                            <ion-icon name="image-outline"></ion-icon>
+                        </span>
+                        <span class="navigation-text">Image</span>
+                    </a>
+                </li>
+                
+                <li class="navigation-list">
+                    <a href="#">
+                        <span class="navigation-icon">
+                            <ion-icon name="settings-outline"></ion-icon>
+                        </span>
+                        <span class="navigation-text">Setting</span>
+                    </a>
+                </li>
+
+                <div class="indicator"></div>
+            </ul>
+        </div>
+
+        <script>
+            const navList = document.querySelectorAll('.navigation-list');
+            function activeLink(){
+                navList.forEach((item) =>
+                item.classList.remove('active'));
+                this.classList.add('active');
+            }
+
+            navList.forEach((item) =>
+            item.addEventListener('click', activeLink));
+        </script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>
