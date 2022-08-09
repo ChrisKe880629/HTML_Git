@@ -1,0 +1,73 @@
+.center
+{
+    /* background-color: pink; */
+    height: 100%;
+}
+
+.center div
+{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.center .logo
+{
+    font-size: 5em;
+    font-weight: 800;
+    letter-spacing: 0.01em;
+}
+
+.center .button
+{
+    border: 0;
+    padding: 8px 16px;
+    margin: 10px;
+
+    font-weight: 600;
+}
+
+.searching
+{
+    display: flex;
+    justify-content: center;
+}
+
+.searching-area
+{
+    width: 100%;
+    max-width: 700px;
+    background-color: rgba(255, 255, 255, 0.2);
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    border: 1 solid #70757a;
+    border-radius: 60px;
+    padding: 5px 20px;
+    backdrop-filter: blur(4px) saturate(180%);
+}
+
+.searching-area input
+{
+    background-color: transparent;
+    flex-grow: 1;    
+    border: 0;
+    outline: none;
+    padding: 15px 15px;
+    font-size: 18px;
+    /* color: #cac7ff; */
+}
+
+.searching-area button
+{
+    border: 0;
+    border-radius: 50%;
+    width: 40px;
+    height:40px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.center .blank-area
+{
+    height: 87.5px;
+}

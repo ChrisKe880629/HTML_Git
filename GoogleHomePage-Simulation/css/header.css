@@ -1,0 +1,37 @@
+.header-area
+{
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.header-area .block
+{
+    flex-grow: 1;
+}
+
+header .left
+{
+    margin: 0 30px;
+}
+
+.header-area .right
+{
+    text-align: right;
+}
+
+header .fa
+{
+    font-size: 2em;
+}
+
+header a
+{
+    color: #202124;
+    margin: 0 10px;
+}
+
+header img
+{
+    margin: 10px;
+}
